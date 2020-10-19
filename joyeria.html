@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Corte Irlandés</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="CSS/estilos.css"> 
+    <link rel="stylesheet" href="CSS/joyeria-pendientes.css">
+    <!-- Icono de busqueda de fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <img src="IMAGEN/LOGO/logo_negro.png" >
+        <div class="accesibilidad">
+            <img src="IMAGEN/HEADER/bolsa-de-la-compra.png" width="30px"  height="30px">
+            <img src="IMAGEN/HEADER/usuario2.png" width="30px"  height="30px">
+            <div class="busqueda">
+                <input class="busqueda_input" type="text" name="" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+    <menu>
+        <ul>
+            <li>Deporte</li>
+            <li>Joyeria</li>
+            <li>Juguetes</li>
+            <li>Mascotas</li>
+            <li>Videojuego</li>
+            <li>Música</li>
+            <li>Informática</li>
+            <li>Literatura</li>
+        </ul>
+    </menu>
+    <div class="submenu">
+        <ul>
+            <li>
+                <img src="IMAGEN/SUBMENU/JOYERIA/anillo.png" width="15px"  height="15px">
+                <p>Anillos</p>
+            </li>
+            <li>
+                <img src="IMAGEN/SUBMENU/JOYERIA/collar.png" width="15px"  height="15px">
+                <p>Collares</p>
+            </li>
+            <li>
+                <img src="IMAGEN/SUBMENU/JOYERIA/pendientes.png" width="15px"  height="15px">
+                <p>Pendientes</p>
+            </li>
+            <li>
+                <img src="IMAGEN/SUBMENU/JOYERIA/pulsera.png" width="15px"  height="15px">
+                <p>Pulseras</p>
+            </li>
+        </ul>
+    </div>
+    <div class="titulo">
+        <h1 style="text-align: center;">JOYERIA</h1>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="IMAGEN/SUBMENU/JOYERIA/pendientes/danielle-gehler-dvHFa8FJ9RY-unsplash.jpg" width="75%" height="75%">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="IMAGEN/SUBMENU/JOYERIA/pendientes/thorn-yang-hjrpVUfL8V8-unsplash.jpg" width="75%" height="75%">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="IMAGEN/SUBMENU/JOYERIA/pendientes/oferta-3.jpg" width="75%" height="75%">
+          <div class="text"></div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+    <div class="nav-graper">
+        <div class="left-column">
+            <div>
+                <p>AL GUSTO</p>
+            </div>
+           <div class="opciones">
+                <ul>
+                    <li>Por material
+                        <ul>
+                            <input type="radio" id="oro" name="gender" value="male">
+                            <label for="male">Oro</label><br>
+                            <input type="radio" id="oroBlanco" name="gender" value="female">
+                            <label for="female">Oro blanco</label><br>
+                            <input type="radio" id="plata" name="gender" value="other">
+                            <label for="other">Plata</label>
+                        </ul>
+                    </li>
+                    <li>Por tipo
+                        <ul>
+                            <input type="radio" id="boton" name="gender" value="male">
+                            <label for="male">Botón</label><br>
+                            <input type="radio" id="largo" name="gender" value="female">
+                            <label for="female">Largo</label><br>
+                            <input type="radio" id="enredadera" name="gender" value="other">
+                            <label for="other">Enredadera</label>
+                        </ul>
+                    </li>
+                    <li>Por decoración
+                        <ul>
+                            <input type="radio" id="diamantes" name="gender" value="male">
+                            <label for="male">Diamantes</label><br>
+                            <input type="radio" id="joyas" name="gender" value="female">
+                            <label for="female">Otras joyas</label><br>
+                            <input type="radio" id="nojoyas" name="gender" value="female">
+                            <label for="female">Sin joyas</label><br>
+                        </ul>
+                    </li>
+                </ul>  
+                <button style="font-size: medium;">Buscar</button>
+            </div>  
+        </div>
+       <div class="right-column">
+        <a href="">aqui iran las img</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quam numquam provident sapiente ipsam temporibus dolores nulla fugiat. Accusamus illo repellat iure voluptates porro tenetur nisi debitis ea commodi earum.</p>
+       </div>
+    </div>
+</body>
+
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every  seconds
+    }
+    </script>
+</html>
